@@ -1,0 +1,139 @@
+     // 输入框样式
+     .commonInput .t-input {
+       min-width: 228px;
+       border: 0;
+       background-color: #1b293b;
+       background-image: url('@/assets/rightDrawer/inputbg.png') !important;
+
+       .t-input__inner {
+         color: #ffffff !important;
+       }
+
+       .t-input__suffix>.t-icon {
+         color: #999999 !important;
+       }
+
+       input::-webkit-input-placeholder {
+         font-size: 14px;
+         font-family: pf;
+         font-weight: 400;
+         color: #999999;
+       }
+
+       input:-ms-input-placeholder {
+         font-size: 14px;
+         font-family: pf;
+         font-weight: 400;
+         color: #999999;
+       }
+
+       input::placeholder {
+         font-size: 14px;
+         font-family: pf;
+         font-weight: 400;
+         color: #999999;
+       }
+     }
+
+     // 表格内容
+     .t-table {
+       background-color: transparent;
+
+       .t-table__content {
+         border-radius: 5px;
+       }
+
+       .t-table__header {
+         tr {
+           background-color: transparent;
+         }
+       }
+
+       .tableClassHeader {
+         background-color: #364b63 !important;
+         font-size: 14px;
+         font-family: pf;
+         font-weight: 600;
+         color: #c1bfbf;
+       }
+
+       .operation {
+         // width: 100%;
+         background: #313649;
+       }
+
+       .rowCellStyle {
+         background-color: #1b2331;
+         font-size: 14px;
+         font-family: pf;
+         font-weight: 600;
+         color: #ffffff;
+
+         &:hover {
+           background-color: #363C54 !important;
+         }
+       }
+
+       .rowCellStyle.t-table__row--selected.t-table__row--active {
+         background-color: #363c54 !important;
+       }
+
+
+       //  .t-table__pagination {
+       //    .t-pagination__total {
+       //      color: #fff !important;
+       //    }
+
+       //  }
+     }
+
+     // 按钮的动效去除
+     .t-button:not(.t-is-disabled):not(.t-button--ghost) {
+       // --ripple-color: rgb(151, 150, 148) !important;
+       --ripple-color: none;
+     }
+
+     // loading 加载
+     .t-loading__overlay {
+       background-color: rgba(23, 29, 44, 0.8) !important;
+       z-index: 999999;
+     }
+
+
+     .t-form {
+       .t-form__label {
+         font-size: 14px;
+         font-family: pf;
+         font-weight: 400;
+         color: #e1e1e1;
+       }
+
+       .t-input,
+       .t-select__wrap,
+       .t-textarea__inner {
+
+         color: #fff;
+         background-color: #131937 !important;
+
+         .t-input__inner {
+           color: #e1e1e1;
+         }
+
+         .t-input__suffix {
+           width: 20px;
+           height: 10px;
+
+           .t-icon {
+             color: #7d8592 !important;
+           }
+         }
+       }
+
+       .t-textarea__inner::placeholder,
+       .t-input__inner::placeholder {
+         font-size: 14px;
+         font-family: pf;
+         font-weight: 400;
+         color: #c2c2c2;
+       }
+     }

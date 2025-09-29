@@ -1,0 +1,47 @@
+{
+  "name": "academic_database",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "echarts": "^4.9.0",
+    "element-plus": "^2.10.7",
+    "highlight.js": "^11.9.0",
+    "jsencrypt": "^3.5.4",
+    "json-bigint": "^1.0.0",
+    "markdown-it": "^14.0.0",
+    "markdown-it-abbr": "^2.0.0",
+    "markdown-it-container": "^4.0.0",
+    "markdown-it-deflist": "^3.0.0",
+    "markdown-it-emoji": "^3.0.0",
+    "markdown-it-footnote": "^4.0.0",
+    "markdown-it-highlightjs": "^4.2.0",
+    "markdown-it-ins": "^4.0.0",
+    "markdown-it-mark": "^4.0.0",
+    "markdown-it-sub": "^2.0.0",
+    "markdown-it-sup": "^2.0.0",
+    "markdown-it-table": "^4.1.1",
+    "markdown-it-task-lists": "^2.1.1",
+    "markdown-it-toc": "^1.1.0",
+    "markdown-it-toc-done-right": "^4.2.0",
+    "nanoid": "^5.0.4",
+    "pinia": "^2.0.34",
+    "pinia-plugin-persist": "^1.0.0",
+    "tdesign-vue-next": "^1.7.2",
+    "vue": "^3.5.18",
+    "vue-pdf-embed": "^2.1.3",
+    "vue-router": "^4.5.1",
+    "vue3-menus": "^1.1.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "sass": "^1.90.0",
+    "vite": "^7.1.2"
+  }
+}

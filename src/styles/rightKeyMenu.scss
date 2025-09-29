@@ -1,0 +1,17 @@
+.menus-item-class {
+  background-color: #292F46 !important;
+
+  .v3-menus-item {
+    color: #fff;
+  }
+
+  .v3-menus-item.v3-menus-active {
+    background-color: #292F46 !important;
+    color: #fff !important;
+  }
+
+
+  .v3-menus-item:hover {
+    background-color: #3E5271 !important;
+  }
+}

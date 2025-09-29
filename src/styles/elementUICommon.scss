@@ -1,0 +1,58 @@
+// 表格公共样式
+.tableBox {
+
+  // 表头
+  .el-table th {
+    color: #ffffff;
+    background-color: transparent !important;
+  }
+
+  .el-table th>.cell {
+    // min-width: 80px;
+  }
+
+  .el-table td {
+    // border-bottom: 2px solid;
+  }
+
+  .el-table tbody tr:hover>td {
+    background-color: rgb(47, 71, 100, 0.1) !important;
+  }
+
+  .el-table {
+    color: #ffffff;
+    --el-table-bg-color: unset;
+    --el-table-tr-bg-color: unset;
+    --el-table-border-color: rgba(78, 85, 133, 0.9);
+  }
+
+}
+
+.el-badge__content {
+  border: none !important;
+}
+
+.el-badge__content--danger {
+  margin-right: -2px;
+  background-color: #FF0000 !important;
+}
+
+.el-loading-mask {
+  background-color: rgba(3, 3, 3, 0.4) !important;
+}
+
+.el-loading-spinner .path {
+  -webkit-animation: loading-dash 1.5s ease-in-out infinite;
+  animation: loading-dash 1.5s ease-in-out infinite;
+  stroke-dasharray: 90, 150;
+  stroke-dashoffset: 0;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke: #6d7bff !important;
+}
+
+.el-loading-spinner .el-loading-text {
+  color: #6d7bff !important;
+  margin: 3px 0;
+  font-size: 14px;
+}

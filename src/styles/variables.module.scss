@@ -1,0 +1,12 @@
+$headerBoxHeight: 57px;
+$leftBoxWidth: 260px;
+$rightBoxWidth: 336px;
+
+$textBoxHeight: 160px; // 谈话框高度 textarea
+
+:export {
+  headerBoxHeight: $headerBoxHeight;
+  leftBoxWidth: $leftBoxWidth;
+  rightBoxWidth: $rightBoxWidth;
+  textBoxHeight: $textBoxHeight;
+}

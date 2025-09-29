@@ -1,0 +1,309 @@
+/* homeView 全局样式 */
+.homeView {
+  font-family: "Microsoft YaHei", Arial, sans-serif;
+  background-color: #f5f6fa;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 60px; /* 留出底部按钮空间 */
+  box-sizing: border-box;
+}
+
+/* ============= 头部用户区域 ============= */
+.header-user {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.user-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-size: 14px;
+  color: #333;
+  margin-right: auto;
+  font-weight: 500;
+}
+
+.quit-btn {
+  font-size: 14px;
+  color: #999;
+  cursor: pointer;
+  padding: 4px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.quit-btn:hover {
+  color: #ff4d4f;
+  border-color: #ff4d4f;
+  background-color: #fff2f2;
+}
+
+/* ============= 标题区域 ============= */
+.titleArea {
+  text-align: center;
+  padding: 40px 20px 30px;
+  background: linear-gradient(135deg, #e6f7ff 0%, #f0f5ff 100%);
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.chzn {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1a3a6e;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.eng {
+  font-size: 16px;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+/* 搜索框容器 */
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  gap: 10px;
+}
+
+.input,
+.inputTypeB {
+  flex: 1;
+  max-width: 600px;
+}
+
+.input ::v-deep .el-input__inner,
+.inputTypeB ::v-deep .el-input__inner {
+  border-radius: 20px !important;
+  border: 1px solid #dcdfe6;
+  padding-right: 40px;
+  height: 40px;
+  font-size: 14px;
+}
+
+.input ::v-deep .el-input__suffix {
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.inputTypeB ::v-deep .el-input__suffix {
+  pointer-events: auto;
+}
+
+.searchSet {
+  display: flex;
+  align-items: center;
+  color: #1890ff;
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+.searchFont {
+  font-size: 14px;
+  margin-left: 4px;
+  color: #1890ff;
+}
+
+.operbtn {
+  background-color: #1890ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.operbtn:hover {
+  background-color: #0c7cd5;
+}
+
+/* ============= 热门搜索 ============= */
+.popularSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 800px;
+  margin: 20px auto 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.pstit {
+  font-weight: 500;
+  color: #333;
+}
+
+.searchItem {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex: 1;
+}
+
+.item {
+  padding: 6px 14px;
+  background-color: #e6f7ff;
+  color: #1890ff;
+  border: 1px solid #91d5ff;
+  border-radius: 16px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.item:hover {
+  background-color: #bae7ff;
+  transform: scale(1.05);
+}
+
+/* ============= 导航栏 ============= */
+.navBar {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 0 20px;
+  border-bottom: 1px solid #e8e8e8;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.bar {
+  padding: 14px 20px;
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-bottom: 3px solid transparent;
+}
+
+.bar:hover {
+  color: #1890ff;
+}
+
+.barActive {
+  color: #1890ff !important;
+  font-weight: 600;
+  border-bottom-color: #1890ff;
+}
+
+.navBarShadow {
+  height: 4px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.08), transparent);
+}
+
+/* ============= 主体内容区 ============= */
+.mainContent {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+  min-height: 500px;
+}
+
+/* ============= 底部操作按钮 ============= */
+.loginAndAi {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 100;
+}
+
+.laaItem {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 24px;
+  padding: 8px 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 14px;
+  color: #333;
+  white-space: nowrap;
+}
+
+.laaItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.laaIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  color: #1890ff;
+}
+
+.laaFont {
+  font-size: 14px;
+}
+
+/* ============= 响应式优化 ============= */
+@media (max-width: 768px) {
+  .chzn {
+    font-size: 22px;
+  }
+
+  .eng {
+    font-size: 14px;
+  }
+
+  .search {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .input,
+  .inputTypeB {
+    max-width: 100%;
+  }
+
+  .operbtn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navBar {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .bar {
+    font-size: 15px;
+    padding: 12px 16px;
+  }
+
+  .loginAndAi {
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .homeView {
+    padding-bottom: 20px;
+  }
+}
